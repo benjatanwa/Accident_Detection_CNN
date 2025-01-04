@@ -1,0 +1,6 @@
+tensorflow
+streamlit
+joblib
+pillow
+numpy
+gzip
