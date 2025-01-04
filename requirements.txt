@@ -3,4 +3,4 @@ streamlit
 joblib
 pillow
 numpy
-gzip
+gdown
