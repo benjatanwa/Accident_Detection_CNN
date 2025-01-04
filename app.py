@@ -25,7 +25,7 @@ def predict(image):
     image = image.resize(IMG_SIZE)  # Resize ภาพ
     image_array = np.expand_dims(np.array(image) / 255.0, axis=0)  # Normalize และเพิ่มมิติ
     prediction = model.predict(image_array)
-    return "Accident" if prediction[0][0] > 0.5 else "Non_Accident"
+    return "Accident" if prediction[0][0] < 0.5 else "Non_Accident"
 
 # สร้างอินเทอร์เฟซ Streamlit
 st.title("Road Accident Detection System")
