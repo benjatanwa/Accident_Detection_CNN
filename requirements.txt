@@ -1,6 +1,0 @@
-tensorflow
-streamlit
-joblib
-pillow
-numpy
-gdown
