@@ -5,7 +5,7 @@ from PIL import Image
 import numpy as np
 
 # ดาวน์โหลดไฟล์โมเดลจาก Google Drive
-url = 'https://drive.google.com/uc?id=1kEI2Ba8jvObt1ps_Ggco8bDLN5WPyQMT'  # เปลี่ยน URL เป็นแบบ direct download
+url = 'https://drive.google.com/uc?export=download&id=1abSk9bY-f5eiVqqCpIcfrNmWA2tfpe2S'
 output = 'cnn_model.h5'  # เปลี่ยนเป็น .h5 หากคุณบันทึกเป็นไฟล์ Keras
 
 gdown.download(url, output, quiet=False)
