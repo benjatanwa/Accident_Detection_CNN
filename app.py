@@ -5,7 +5,7 @@ from PIL import Image
 import numpy as np
 
 # ดาวน์โหลดไฟล์โมเดลจาก Google Drive
-url = 'https://drive.google.com/uc?id=1kEI2Ba8jvObt1ps_Ggco8bDLN5WPyQMT'  # เปลี่ยน URL เป็นแบบ direct download
+url = 'https://drive.google.com/uc?id=19v17hyiR_moWSJrxgxlGspXz5rSbFNMx'  # เปลี่ยน URL เป็นแบบ direct download
 output = 'cnn_model.pkl'
 gdown.download(url, output, quiet=False)
 
