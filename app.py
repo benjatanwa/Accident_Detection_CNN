@@ -1,12 +1,16 @@
+import gdown
+import joblib
 import streamlit as st
 from PIL import Image
 import numpy as np
-import joblib
-import gzip
 
-# โหลดโมเดลจากไฟล์ที่บีบอัด
-with gzip.open('cnn_model.pkl.gz', 'rb') as f:
-    model = joblib.load(f)
+# ดาวน์โหลดไฟล์โมเดลจาก Google Drive
+url = 'https://drive.google.com/file/d/1kEI2Ba8jvObt1ps_Ggco8bDLN5WPyQMT/view?usp=sharing'
+output = 'cnn_model.pkl'
+gdown.download(url, output, quiet=False)
+
+# โหลดโมเดล
+model = joblib.load(output)
 
 # กำหนดขนาดของภาพที่โมเดลคาดหวัง
 IMG_SIZE = (150, 150)
